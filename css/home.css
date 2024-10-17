@@ -33,3 +33,32 @@ main .main-container {
         grid-template-columns: 100%;
     }
 }
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Height of the slider */
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%; /* Width of each slide */
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
