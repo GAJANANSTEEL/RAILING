@@ -9,22 +9,12 @@
     <!-- GOOGLE FONTS CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
-
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="css/login_register_edit_create.css">
 </head>
 
 <body>
-
-    <!-- <div class="error">
-        <div class="errorBox">
-            <div class="container">
-                <h1>Error</h1>
-            </div>
-        </div>
-    </div> -->
 
     <header>
         <div class="container">
@@ -52,7 +42,7 @@
                     <li><a href="categoryGame.html">🚗Racing</a></li>
                     <li><a href="categoryGame.html">💀Horror</a></li>
                     <li><a href="create.html">✍🏻Create post</a></li>
-                    <li><a href="">🚪LogOut</a></li>
+                    <li><a href="#">🚪LogOut</a></li>
                     <li><a href="profile.html">👨‍💻My Profile</a></li>
                     <li><a href="login.html">🔑LogIn</a></li>
                     <li><a href="register.html">✍🏻Register</a></li>
@@ -67,21 +57,21 @@
                 <h1 class="formName">Register</h1>
                 <form>
                     <label>Username</label>
-                    <input type="text" formControlName="username" minlength="3" required />
+                    <input type="text" name="username" minlength="3" required />
 
                     <label>Email</label>
-                    <input type="email" formControlName="email" required />
+                    <input type="email" name="email" required />
 
                     <label>Password</label>
-                    <input type="password" formControlName="password" minlength="6" required />
+                    <input type="password" name="password" minlength="6" required />
 
                     <label>Confirm Password</label>
-                    <input type="password" formControlName="repassword" minlength="6" required />
+                    <input type="password" name="confirm_password" minlength="6" required />
 
                     <button class="submitBtn" type="submit">Register</button>
                 </form>
                 <p class="login-register">
-                    Already have an account? <a href="login.html">Login here</a>
+                    Already have an account? <a href="login.html">Login Here</a>
                 </p>
             </div>
         </div>
